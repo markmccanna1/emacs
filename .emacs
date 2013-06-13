@@ -4,22 +4,31 @@
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-; Ido mode
-(require 'ido)
-(ido-mode t)
-
-; Multiple-cursors
+; Multiple cursors
 (require 'multiple-cursors)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
+; Ido mode
+(require 'ido)
+(ido-mode t)
+
 ; Auto Complete
-(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
 
 ; Zencoding
 (require 'zencoding-mode)
 (add-hook 'sgml-mode-hook 'zencoding-mode)
+
+; Flycheck
+(require 'flycheck)
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+; Find file in
+(require 'find-file-in-project)
+(global-set-key (kbd "C-x f") 'find-file-in-project)
 
 ; Load theme
 (load-theme 'zenburn t)
@@ -55,9 +64,9 @@
 (column-number-mode 1)
 
 ; Backup
-(setq make-backup-files t)
-(setq version-control t)
-(setq backup-directory-alist (quote ((".*" . "~/.emacs_backups/"))))
+(setq make-backup-files nil)
+;(setq version-control t)
+;(setq backup-directory-alist (quote ((".*" . "~/.emacs_backups/"))))
 
 ; Helpful key bindings
 (global-set-key "\C-^" 'enlarge-window)
