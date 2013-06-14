@@ -178,7 +178,7 @@
       [(20130429 1926)
        nil "useful HTTP client [github]" single])
  (wcheck-mode .
-	      [(20130605 1641)
+	      [(20130613 1808)
 	       nil "General interface for text checkers [github]" single])
  (wc-mode .
 	  [(20120531 1344)
@@ -671,7 +671,7 @@
 	   [(20130312 1839)
 	    nil "Support sequential operation which omitted prefix keys. [github]" single])
  (smartparens .
-	      [(20130612 235)
+	      [(20130613 2227)
 	       ((dash
 		 (1 1 0)))
 	       "Automatic insertion, wrapping and paredit-like navigation with user defined pairs. [github]" tar])
@@ -773,7 +773,7 @@
 		 [(20121007 1837)
 		  nil "Provide fast switching between shell buffers [github]" tar])
  (shell-pop .
-	    [(20130301 726)
+	    [(20130613 1845)
 	     nil "helps you to use shell easily on Emacs. Only one key action to work. [github]" single])
  (shell-history .
 		[(20100504 850)
@@ -930,7 +930,7 @@
 	   [(20121207 1930)
 	    nil "Roy major mode [github]" single])
  (robe .
-       [(20130613 5)
+       [(20130613 2025)
 	((inf-ruby
 	  (2 2 4)))
 	"Code navigation, documentation lookup and completion for Ruby [github]" tar])
@@ -973,7 +973,7 @@
 		      [(20130316 2304)
 		       nil "Replace commands whose query is from region [wiki]" single])
  (repl-toggle .
-	      [(20130611 1914)
+	      [(20130613 2030)
 	       nil "Switch to/from repl buffer for current major-mode [github]" single])
  (region-bindings-mode .
 		       [(20130430 2107)
@@ -1241,7 +1241,7 @@
 			(22)))
 		      "Enable some paredit features in non-lisp buffers [github]" single])
  (paredit .
-	  [(20130407 1708)
+	  [(20130613 1947)
 	   nil "minor mode for editing parentheses [git]" single])
  (pangu-spacing .
 		[(20130525 1903)
@@ -1856,6 +1856,9 @@
  (lcs .
       [(20121201 1455)
        nil "find out the longest common sequence [github]" single])
+ (launch .
+	 [(20130613 1250)
+	  nil "launch files with OS-standard associated applications. [github]" single])
  (latex-pretty-symbols .
 		       [(20111011 1446)
 			nil "Display many latex symbols as their unicode counterparts [hg]" single])
@@ -2535,7 +2538,7 @@
 		 [(20130506 924)
 		  nil "Major mode for editing .gitconfig files [github]" single])
  (git-messenger .
-		[(20130613 1222)
+		[(20130613 2340)
 		 ((popup
 		   (0 5 0)))
 		 "Port of gitmessenger.vim [github]" single])
@@ -2974,7 +2977,7 @@
 	 [(20130604 1458)
 	  nil "Erlang major mode [github]" tar])
  (ergoemacs-mode .
-		 [(20130612 1148)
+		 [(20130613 1052)
 		  ((org-cua-dwim
 		    (0 5)))
 		  "A minor mode, a keybinding set based on ergonomics. [git]" tar])
