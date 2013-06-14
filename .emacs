@@ -63,6 +63,9 @@
 ;(setq version-control t)
 ;(setq backup-directory-alist (quote ((".*" . "~/.emacs_backups/"))))
 
+; Autosave
+(setq auto-save-default nil)
+
 ; Helpful key bindings
 (global-set-key "\C-^" 'enlarge-window)
 (global-set-key "\M-g" 'goto-line)
@@ -73,6 +76,17 @@
 (setq tab-width 2) ; or any other preferred value
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
+
+; Back tab
+(add-hook 'term-setup-hook
+          (lambda () (define-key input-decode-map "\e[Z" [backtab])))
+
+; Yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
+;; (add-hook 'prog-mode-hook
+;;           '(lambda ()
+;;              (yas-minor-mode)))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
