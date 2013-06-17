@@ -75,7 +75,8 @@
 (global-set-key "\M-;" 'evilnc-comment-or-uncomment-lines)
 
 ; Tab 2
-(setq js-indent-level 2)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
 (setq tab-width 2) ; or any other preferred value
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
