@@ -17,6 +17,9 @@
 (require 'auto-complete-config)
 (ac-config-default)
 
+; Js2 mode
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
 ; Zencoding
 (require 'zencoding-mode)
 (add-hook 'sgml-mode-hook 'zencoding-mode)
@@ -78,8 +81,6 @@
 (defvaralias 'cperl-indent-level 'tab-width)
 
 ; Back tab
-(add-hook 'term-setup-hook
-          (lambda () (define-key input-decode-map "\e[Z" [backtab])))
 
 ; Yasnippet
 (require 'yasnippet)
