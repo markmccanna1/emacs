@@ -83,6 +83,11 @@
 
 ; Back tab
 
+; FlySpell
+(require 'flyspell-lazy)
+(flyspell-lazy-mode 1)
+(flyspell-mode 1)
+
 ; Yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
