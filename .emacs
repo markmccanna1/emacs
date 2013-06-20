@@ -17,6 +17,10 @@
 (require 'auto-complete-config)
 (ac-config-default)
 
+; Multi term
+(require 'multi-term)
+(setq multi-term-program "/bin/bash")
+
 ; Js2 mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
@@ -73,6 +77,7 @@
 (global-set-key "\C-^" 'enlarge-window)
 (global-set-key "\M-g" 'goto-line)
 (global-set-key "\M-;" 'evilnc-comment-or-uncomment-lines)
+(global-set-key "\C-t" 'multi-term)
 
 ; Tab 2
 (setq-default indent-tabs-mode nil)
