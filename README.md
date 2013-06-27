@@ -1,11 +1,13 @@
-add to bash.rc(
+Upgrade emacs to version 24 if you havent already.
+https://launchpad.net/~cassou/+archive/emacs
 
-    alias emacs="env TERM=xterm-256color emacs -nw"
-    export TERM=xterm-256color
+Add these lines to your bash.rc
 
-)
+   alias emacs="env TERM=xterm-256color emacs -nw"
+   export TERM=xterm-256color
 
-do this from the repo dir then
+Do this from the repo dir then
+
    cp .emacs ~
    cp -r .emacs.d/ ~
 
