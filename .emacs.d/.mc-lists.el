@@ -3,9 +3,15 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        evilnc-comment-or-uncomment-lines
+        orgtbl-hijacker-command-101
+        orgtbl-self-insert-command
+        sgml-slash
         yas-expand
+        zencoding-expand-line
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        kill-region
         ))

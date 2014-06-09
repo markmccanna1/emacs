@@ -13,6 +13,8 @@
 (require 'ido)
 (ido-mode t)
 
+; CSS mode
+
 ; Auto Complete
 (require 'auto-complete-config)
 (ac-config-default)
@@ -27,6 +29,16 @@
 ; Zencoding
 (require 'zencoding-mode)
 (add-hook 'sgml-mode-hook 'zencoding-mode)
+
+; Skewer Mode
+(add-hook 'js2-mode-hook 'skewer-mode)
+(add-hook 'css-mode-hook 'skewer-css-mode)
+(add-hook 'html-mode-hook 'skewer-html-mode)
+
+; Sql Mode
+(eval-after-load "sql"
+  '(load-library "sql-indent"))
+(add-hook 'sql-mode-hook 'sql-highlight-postgres-keywords)
 
 ; Flycheck
 (require 'flycheck)
@@ -82,6 +94,7 @@
 ; Tab 2
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
+(setq css-indent-offset 2)
 (setq tab-width 2) ; or any other preferred value
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
